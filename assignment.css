@@ -1,0 +1,619 @@
+*{
+ margin: 0%;
+ padding: 0%   
+}
+body{
+    background-color: rgb(1,1,14);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(1,1,14);
+    padding: 22px;
+    box-shadow: 0px 2px 6px 2px rgb(26,25,25);
+    color: white;
+    
+}
+nav ul li a{
+   margin-inline: 22px;
+   text-decoration: none;
+   color: white; 
+}
+ul li{
+    list-style: none;
+} 
+nav ul{
+    margin-right: 63px;
+    margin-top: 6px;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: fantasy;
+    margin-left: 33px;
+    color: rgb(129, 115, 115);
+}
+.logo h1::first-letter{
+    color: pink;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul li button{
+    width:100px;
+    height: 33px;
+    background-color: rgb(4,180,4);
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+ul li button:hover{
+  border: 2px solid white;
+  background-color: transparent;
+  /* color: rgb(20,251,20);   */
+  color: rebeccapurple;
+  cursor: pointer; 
+}
+ul li a:hover{
+    color: rgb(20,251,20); 
+    border-bottom: 2px solid rgb(20,251,20);
+}
+
+
+/* main */
+
+.Home{
+    display: flex;
+    height: 700px;
+    background-image: url(cov.jpg); 
+}
+
+.Home .hometext{
+    margin-top: 200px;
+    margin-left: 44px;
+}
+.hometext h1{
+    font-size: 50px;
+    color: rgb(55,248,55);
+}
+.hometext p{
+color: silver;
+}
+.hometext button{
+    margin-top: 22px;
+    font-size: 22px;
+    width: 140px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer; 
+    border: none;
+}
+.hometext button:hover{
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: rgb(20,251,20);
+}
+@media screen and (max-width: 768px) {
+    .hometext {
+        position: static; /* Reset position to allow content to flow normally */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hometext h1 {
+        font-size: 40px;
+    }
+
+    .hometext p {
+        font-size: 16px;
+    }
+
+    .hometext button {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+.head{
+    text-align: center;
+    padding: 95px;
+}
+
+.ourprogram{
+    display: flex;
+    justify-content: center;
+}
+
+.ourprogram .crd{
+    margin-inline: 22px;
+    text-align: center;
+}
+
+.crd img{
+    width: 500px;
+    height: 400px;
+}
+
+.ourprogram .crd img:hover{
+    width: 103%;
+    
+}
+@media screen and (max-width: 768px) {
+    .ourprogram{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourprogram .crd{
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .ourprogram .crd {
+        width: 90%;
+        max-width: 250px;
+         /* Adjust width for smaller screens */
+    }
+    .card p{
+        font-size: 14px;
+    }
+}
+/* plan */
+.ourplan{
+    display: flex;
+    justify-content: center;
+}
+.ourplan .card{
+   width: 300px;
+   height: 400px;
+   padding: 4px;
+   background-color: rgb(129, 115, 115); 
+   text-align: center;
+   margin-inline: 22px; 
+}
+
+.card i {
+ font-size: 33px;
+ margin-top: 22px;
+ color: orange;   
+}
+
+.card h3{
+    margin-top: 22px;
+    color: green;
+}
+.card h1{
+    margin-top: 22px;
+    color: green;
+}
+.card p{
+    margin-top: 22px;
+    color: silver;
+}
+
+.card button{
+    margin-top: 22px;
+    width: 100px;
+    height:  38px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.card button:hover{
+    border: 2px solid yellow;
+    background-color: transparent;
+    color:rgb(20,251,20);
+}
+.card:hover{
+    transition: 0.7s ease;
+    width: 310px;
+    height: 440px;
+    background-color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .ourplan {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourplan .card{
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .ourplan .card {
+        width: 90%;
+        max-width: 250px;
+         /* Adjust width for smaller screens */
+    }
+    .card p{
+        font-size: 14px;
+    }
+}
+
+.ourblog{
+    display: flex;
+    justify-content: center;
+}
+.ourblog .blogcard{
+    width: 300px;
+    height: 500px; 
+    margin-inline: 33px;
+    background-color: rgb(42,41,41);
+}
+
+
+
+.blogcard img{
+    width: 100%;
+    height: 300px;
+}
+.blogcard p{
+    margin-top: 22px;
+}
+.blogtext{
+    margin-top: 11px;
+    margin-left: 6px;
+}
+.blogtext a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(55,248,55);
+    width: 90px;
+    padding: 8px;
+    /* -text-align: none; */
+    position: absolute;
+    margin-top: 22px; 
+    cursor: pointer; 
+}
+@media screen and (max-width: 768px) {
+    .ourblog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourblog .blogcard {
+        width: 80%;
+        max-width: 300px; /* Adjust as needed */
+        margin-bottom: 30px; /* Add space between cards */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ourblog .blogcard {
+        width: 90%;
+        max-width: 250px; /* Adjust as needed */
+    }
+
+    .blogcard p {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+/* customer review */
+.testimonial{
+    text-align: center; 
+    justify-content: center;
+     /* background-color: peachpuff;  */
+}
+.head h1{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.customer{
+    display:flex;
+    justify-content: center;
+}
+.customer .review{
+    width: 300px;
+    height: 300px;
+    background-color: white; 
+    /* margin: 25px 0 25px 25px; */
+    /* float: left; */
+    justify-content: center;
+    margin-top: 22px;
+    margin-inline: 22px;
+}
+
+.review img{
+   width: 100px;
+   height: 100px;
+    border-radius: 100%;
+}   
+
+#testimonial .review img{
+    margin-top: 15px;
+    margin-left: 25%;
+}
+
+.review h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    color: black;
+}
+.review p{
+    margin-top: 22px;
+    color: black;
+    text-align: center;
+
+}
+@media screen and (max-width: 768px) {
+    .customer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer .review {
+        width: 80%;
+        max-width: 300px; /* Adjust as needed */
+    }
+
+    .customer .review:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .customer .review {
+        width: 90%;
+        max-width: 250px; /* Adjust as needed */
+    }
+
+    .review img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .review h3 {
+        font-size: 16px;
+    }
+
+    .review p {
+        font-size: 14px;
+    }
+}
+/* calculator */
+.calculator {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(42, 41, 41);
+    color: white;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.calculator h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.calculatortext {
+    margin-bottom: 30px;
+}
+
+.calculatortext h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.calculatortext p {
+    margin-bottom: 10px;
+}
+
+.calculatortext ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.calculatortext ul li {
+    margin-bottom: 5px;
+}
+
+.Wrapper {
+    text-align: center;
+}
+
+.Wrapper p {
+    margin-bottom: 10px;
+}
+
+.Wrapper input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.Wrapper button {
+    padding: 10px 20px;
+    background-color: rgb(55, 248, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#output {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* contact */
+.contactpage{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 60px; */
+}
+.contacttext{
+    margin-left: 33px;
+    color: rgb(20,251,20);
+}
+.contacttext h1{
+    margin-left: 0;
+}
+.contacttext h2{
+    margin-left: 33px;
+}
+.contactus{
+    text-align: center;
+}
+.contactus input{
+    width: 350px;
+    padding: 8px;
+    height: 33px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.contactus button{
+    width: 350px;
+    height: 45px;
+    background-color: rgb(55,248,55);
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.contactus button:hover{
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: rgb(20,251,20);
+}
+#reg-form{
+    display: flex;
+    justify-content: center;
+
+}
+.contact{
+    justify-content: center;
+    text-align: center;
+    margin-top: 22px;
+}
+.contact .form-div{
+    margin-top: 22px;
+   
+}
+.form-div input{
+    width: 300px;
+    height: 20px;
+    /* color: rgb(20,251,20); */
+    font-size: 18px;
+    border:none;
+    border-radius: 2px;
+    /* margin-top: 18px; */
+    margin-left: 10px;
+    padding: 8px;
+}
+.form-div button{
+    width: 100px;
+    height: 30px;
+    margin-top: 22px;
+    color: white;
+    background-color: rgb(20,251,20);
+}
+.form-div button:hover{
+    border: 2px solid orange;
+    background-color: transparent;
+    color: rgb(20,251,20);
+}
+.form-div select{
+    width: 200px;
+    height: 30px;
+}
+.form-div textarea{
+    width: 300px;
+    /* height: 30px; */
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    padding: 22px;
+    box-shadow: 0px 2px 6px 2px rgb(157, 33, 33);
+}
+.footer .footerText{
+    margin-inline: 73px;
+    margin-top: 33px;
+}
+.footerText{
+    margin-top: 11px;
+    color: silver;
+}
+.footerText p{
+    margin-top: 22px;
+}
+.footerText img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 22px;
+    /* padding: 22px; */
+    margin-inline: 10px;
+} 
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footerText {
+        margin-inline: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footerText {
+        margin-top: 20px;
+    }
+
+    .footerText p {
+        margin-top: 10px;
+    }
+
+    .footerText img {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footerText {
+        margin-top: 10px;
+    }
+    .footerText h2{
+        margin-top: 22px;
+    }
+    .footerText p {
+        margin-top: 5px;
+    }
+
+    .footerText img {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
